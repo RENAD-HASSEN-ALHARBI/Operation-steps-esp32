@@ -1,0 +1,23 @@
+The first step is to update your computer to the most recent version of the Arduino IDE (Arduino 1.8.5 or higher).
+
+next Download the entire espit-arduino repository's contents 
+
+The third step is to access Sketchbook within the Arduino environment. Unless otherwise altered, the default directory in "Documents" is the Arduino directory. Open the Arduino IDE and go to File > Preferences > Sketchbook Location to verify this.
+
+Four step  Open the documentation and look at the sketchbook under My Documents > Arduino. Inside, there ought to be a directory of libraries.
+Create the hardware directory in step five. Make a directory inside it named espressif. Create a new directory inside it named esp32.
+It should be organized as follows: My Documents > Arduino > hardware > espressif > esp32.
+
+sex step Preloaded in the ESP32 directory are  extract ESP32 files.
+
+Seven Once you're done, check for "boards.txt", "platform.txt", folders, documents, and tools, inside the esp32 folder.
+In order to compile ESP32 code, you need the Xtensa GNU compiler (GCC) suite installed on your machine and go to esp32 > tools folder and execute get.exe
+
+Eight This executable will download the Xtensa GNU Tools and ESP32 SDK, and then unzip it to the appropriate location
+You should see some new folders in the Tools directory, including "sdk" and "xtensa-esp32-elf" once you're done.
+
+Nine To make sure the ESP32 Arduino and ESP32 development board are set up correctly, we are going to upload the simplest code ever - The Blink!
+
+Ten we will use LED for this test. As mentioned earlier in this project, the board's D2 pin is connected to the onboard blue LED and can be user programmed. perfect !
+
+Eleven Before we can upload the code and run with the LED, we need to make sure the board is correctly identified in the Arduino IDE. Open the Arduino IDE and select the ESP32 Dev Module option under Arduino IDE > Tools > Board
